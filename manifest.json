@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Webhook URL Observer",
+  "version": "1.0",
+  "description": "Report visited URLs to your SIEM with webhooks.",
+  "permissions": ["webRequest","identity", "identity.email", "storage"],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "action": {
+    "default_icon": {
+      "16": "images/icon-16.png",
+      "48": "images/icon-32.png",
+      "128": "images/icon-48.png"
+    }
+  },
+  "icons": {
+    "16": "images/icon-16.png",
+    "48": "images/icon-32.png",
+    "128": "images/icon-48.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_page": "options.html"
+}
