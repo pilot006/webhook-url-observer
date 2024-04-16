@@ -14,3 +14,14 @@ This experiment was born from a desire to get full URL telemetry into my SIEM (C
 3. Click on `Load unpacked` and choose the folder where you unzipped the contents of the repo
 4. Configure the webhook URL to send to under the extensions options.
 5. Once saved, as long as your are signed in and the webhook URL is configured, you should start instantly receiving telemetry.
+
+## Example Webhook Payload/Log
+```
+{
+    "timestamp": "2024-04-16T13:07:34.113Z",
+    "user": "mike@altostrat.com",
+    "app_name": "Webhook URL Observer",
+    "url": "https://cloud.google.com/security/products/security-operations",
+    "method": "POST"
+}
+```
